@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Playfair', serif;
-    background: linear-gradient(90deg, #000000, #3533cd);
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
     color: white;
     margin: 0;
     padding: 0;
@@ -13,10 +13,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.6);
-    /* Slight transparency */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px 0; /* Reduced padding for a sleeker look */
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker for contrast */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 2); /* Softer shadow */
     position: sticky;
     top: 0;
     width: 100%;
@@ -26,64 +25,96 @@ body {
 /* Navigation Container */
 .navdiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between logo and nav items */
     align-items: center;
     width: 85%;
     max-width: 1200px;
 }
 
 /* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    margin-right: auto; /* Pushes the logo to the left */
+    gap: 12px;
+    /* Increased spacing between logo and text */
+}
+
+.logo img {
+    height: 50px;
+    /* Slightly larger for better visibility */
+    width: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Slight rounding for a premium look */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    /* Soft glow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 .logo a {
-    font-size: 28px;
+    font-size: 30px;
+    /* Bigger text for impact */
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    /* Adds a modern, premium look */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.logo:hover img {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+    /* Stronger glow effect */
 }
 
 .logo a:hover {
-    color: #c0c0ff;
+    color: #e0e0ff;
+    /* Softer hover effect */
 }
 
 /* Navigation Links */
 .nav-items {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px; /* Increased gap for better spacing */
     padding: 0;
 }
 
 .nav-items li a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px; /* Slightly smaller font size for elegance */
     font-weight: 500;
     color: white;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform for hover */
 }
 
 .nav-items li a:hover {
-    color: #d1d1ff;
-    text-decoration: underline;
+    color: #d1d1ff; /* Soft hover color */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
 }
 
 /* Buttons */
 .nav-items li button {
-    background: #3533cd;
+    background: #4a90e2; /* Softer button color */
     color: white;
     border: none;
-    padding: 8px 80px;
-    border-radius: 8px;
-    font-size: 18px;
+    padding: 5px 20px; /* Adjusted padding for a more compact look */
+    border-radius: 5px; /* Slightly smaller border radius */
+    font-size: 16px; /* Slightly smaller font size */
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform for hover */
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
 }
 
 .nav-items li button:hover {
-    background: #5653e0;
-    transform: scale(1.05);
+    background: #5653e0; /* Hover color */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Responsive Design */
