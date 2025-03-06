@@ -1,28 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+
 body {
     font-family: 'Playfair', serif;
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* Slight transparency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-h1,
-h2,
-h3 {
-    font-family: 'Playfair', serif;
+/* Navigation Container */
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo a {
+    font-size: 28px;
     font-weight: bold;
-    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
-
-p {
-    font-family: 'Playfair', serif;
-    font-weight: 400;
-    text-align: center;
+.logo a:hover {
+    color: #c0c0ff;
 }
 
+/* Navigation Links */
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
 
-button {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 600;
+.nav-items li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-items li a:hover {
+    color: #d1d1ff;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.nav-items li button {
+    background: #3533cd;
+    color: white;
+    border: none;
+    padding: 8px 80px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items li button:hover {
+    background: #5653e0;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navdiv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
 }
