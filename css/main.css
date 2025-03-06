@@ -13,9 +13,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0; /* Reduced padding for a sleeker look */
-    background: rgba(0, 0, 0, 0.7); /* Slightly darker for contrast */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 2); /* Softer shadow */
+    padding: 15px 0; /* Padding for the navbar */
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
     width: 100%;
@@ -25,7 +25,7 @@ body {
 /* Navigation Container */
 .navdiv {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav items */
+    justify-content: space-between;
     align-items: center;
     width: 85%;
     max-width: 1200px;
@@ -34,10 +34,8 @@ body {
 /* Logo */
 .logo {
     display: flex;
-    align-items: center; /* Center the logo vertically */
-    margin-right: auto; /* Pushes the logo to the left */
-    gap: 12px;
-    /* Increased spacing between logo and text */
+    align-items: center;
+    margin-right: 20px; /* Space between logo and nav items */
 }
 
 .logo img {
@@ -81,7 +79,7 @@ body {
 .nav-items {
     display: flex;
     list-style: none;
-    gap: 30px; /* Increased gap for better spacing */
+    gap: 30px; /* Increased gap for better spacing between nav items */
     padding: 0;
 }
 
@@ -129,4 +127,33 @@ body {
         gap: 15px;
         margin-top: 10px;
     }
+}
+
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    align-items: center; /* Center the search bar vertically */
+    margin-left: 20px; /* Space between nav items and search bar */
+}
+
+.search-bar {
+    padding: 8px; /* Padding for the input */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 5px; /* Space between input and button */
+    font-size: 16px; /* Font size */
+}
+
+.search-button {
+    background-color: #4a90e2; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 8px 12px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Transition for hover effect */
+}
+
+.search-button:hover {
+    background-color: #5653e0; /* Darker color on hover */
 }
