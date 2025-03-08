@@ -9,7 +9,7 @@
 .testimonial-container h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
 }
 
@@ -42,9 +42,9 @@
 }
 
 .card-content {
-    background-color: #fff;
+    background-color: #1c6caa;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -79,13 +79,10 @@
 .client-info h3 {
     margin: 0 0 5px;
     color: #333;
+    
 }
 
-.client-role {
-    color: #666;
-    font-style: italic;
-    margin: 0 0 10px;
-}
+
 
 .rating {
     color: #ffc107;
@@ -94,7 +91,7 @@
 }
 
 .testimonial-text {
-    color: #555;
+    color: #fffefe;
     line-height: 1.6;
 }
 
@@ -143,7 +140,7 @@
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #2a5298;
 }
 
 /* Navigation dots */
