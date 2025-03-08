@@ -9,6 +9,7 @@
     <title>The Velvet Horizon</title>
     <link rel="icon" href="logo/Logo_the_velvet_horizon 500 x 500.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/card_slide.css" type="text/css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
@@ -42,7 +43,7 @@
         <input type="radio" name="slider" id="slide1" checked>
         <input type="radio" name="slider" id="slide2">
         <input type="radio" name="slider" id="slide3">
-        <input type="radio" name="slider" id="slide4"> <!-- New input radio -->
+        <input type="radio" name="slider" id="slide4">
     
         <div class="slides">
             <div class="slide">
@@ -83,6 +84,117 @@
             <label class="nav-btn" for="slide4"></label> <!-- New navigation label -->
         </div>
     </div>
+    <br><br><br><hr color="white"><br><br><br>
+
+    <div class="testimonial-container">
+        <h2>What Our Clients Say</h2>
+    
+        <div class="slider-container">
+            <!-- Radio buttons for slider control -->
+            <input type="radio" name="testimonial-slider" id="testimonial1" checked>
+            <input type="radio" name="testimonial-slider" id="testimonial2">
+            <input type="radio" name="testimonial-slider" id="testimonial3">
+            <input type="radio" name="testimonial-slider" id="testimonial4">
+    
+            <!-- Testimonial cards -->
+            <div class="slider-cards">
+                <div class="card" id="card1">
+                    <div class="card-content">
+                        <div class="client-image">
+                            <img src="images/Testimonial 1.jpg" alt="Client 1">
+                        </div>
+                        <div class="client-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="client-role">Marketing Director</p>
+                            <div class="rating">★★★★★</div>
+                            <p class="testimonial-text">"The service was exceptional! Their team understood our needs
+                                perfectly and delivered beyond our expectations. I highly recommend their services to anyone
+                                looking for quality."</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card" id="card2">
+                    <div class="card-content">
+                        <div class="client-image">
+                            <img src="images/Testimonial 2.jpg" alt="Client 2">
+                        </div>
+                        <div class="client-info">
+                            <h3>Michael Chen</h3>
+                            <p class="client-role">CEO, Tech Innovations</p>
+                            <div class="rating">★★★★★</div>
+                            <p class="testimonial-text">"Working with this team transformed our business. Their attention to
+                                detail and commitment to excellence made all the difference. Our projects are now completed
+                                ahead of schedule."</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card" id="card3">
+                    <div class="card-content">
+                        <div class="client-image">
+                            <img src="images/Testimonial 3.jpg" alt="Client 3">
+                        </div>
+                        <div class="client-info">
+                            <h3>Emily Rodriguez</h3>
+                            <p class="client-role">Project Manager</p>
+                            <div class="rating">★★★★☆</div>
+                            <p class="testimonial-text">"The collaboration was seamless from start to finish. They
+                                understood our vision and brought fresh ideas to the table. Our team was impressed with
+                                their professionalism and creativity."</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card" id="card4">
+                    <div class="card-content">
+                        <div class="client-image">
+                            <img src="images/Testimonial 4.jpg" alt="Client 4">
+                        </div>
+                        <div class="client-info">
+                            <h3>David Thompson</h3>
+                            <p class="client-role">Design Director</p>
+                            <div class="rating">★★★★★</div>
+                            <p class="testimonial-text">"I've worked with many agencies before, but none delivered the level
+                                of quality and attention we received here. Their innovative approach helped us stand out in
+                                a competitive market."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation buttons for each slide -->
+            <div class="navigation-buttons" id="nav-buttons1">
+                <label for="testimonial4" class="prev-btn">&#10094;</label>
+                <label for="testimonial2" class="next-btn">&#10095;</label>
+            </div>
+            
+            <div class="navigation-buttons" id="nav-buttons2">
+                <label for="testimonial1" class="prev-btn">&#10094;</label>
+                <label for="testimonial3" class="next-btn">&#10095;</label>
+            </div>
+            
+            <div class="navigation-buttons" id="nav-buttons3">
+                <label for="testimonial2" class="prev-btn">&#10094;</label>
+                <label for="testimonial4" class="next-btn">&#10095;</label>
+            </div>
+            
+            <div class="navigation-buttons" id="nav-buttons4">
+                <label for="testimonial3" class="prev-btn">&#10094;</label>
+                <label for="testimonial1" class="next-btn">&#10095;</label>
+            </div>
+    
+            <!-- Navigation dots -->
+            <div class="navigation-dots">
+                <label for="testimonial1" class="nav-dot"></label>
+                <label for="testimonial2" class="nav-dot"></label>
+                <label for="testimonial3" class="nav-dot"></label>
+                <label for="testimonial4" class="nav-dot"></label>
+            </div>
+        </div>
+    </div>
+
+    
 
 </body>
 
