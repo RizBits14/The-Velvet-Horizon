@@ -10,10 +10,31 @@
     <link rel="icon" href="logo/Logo_the_velvet_horizon 500 x 500.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/card_slide.css" type="text/css" />
+    <link rel="stylesheet" href="css/background.css" type="text/css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- Add this right after the opening <body> tag -->
+    <div class="background-decoration">
+        <div class="luxury-pattern top-left"></div>
+        <div class="luxury-pattern top-right"></div>
+        <div class="luxury-pattern bottom-left"></div>
+        <div class="luxury-pattern bottom-right"></div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="shine"></div>
+    </div>
+
     <div class="navbar">
         <div class="navdiv">
             <div class="logo">
@@ -81,16 +102,16 @@
             <label class="nav-btn" for="slide1"></label>
             <label class="nav-btn" for="slide2"></label>
             <label class="nav-btn" for="slide3"></label>
-            <label class="nav-btn" for="slide4"></label> <!-- New navigation label -->
+            <label class="nav-btn" for="slide4"></label> 
         </div>
     </div>
-    <br><br><br><hr color="white"><br><br><br>
+    <br><br><br><hr color="gold"><br><br><br>
 
     <div class="testimonial-container">
-        <h2>What Our Clients Say</h2>
+        <h2 style="text-decoration: underline;">Valuable Testimonials of Our Dear Clients</h2>
     
         <div class="slider-container">
-            <!-- Radio buttons for slider control -->
+            
             <input type="radio" name="testimonial-slider" id="testimonial1" checked>
             <input type="radio" name="testimonial-slider" id="testimonial2">
             <input type="radio" name="testimonial-slider" id="testimonial3">
@@ -104,12 +125,12 @@
                             <img src="images/Testimonial 1.jpg" alt="Client 1">
                         </div>
                         <div class="client-info">
-                            <h3>Sarah Johnson</h3>
-                            <p class="client-role">Marketing Director</p>
+                            <h3>Daniel Harrington</h3>
+                            
                             <div class="rating">★★★★★</div>
-                            <p class="testimonial-text">"The service was exceptional! Their team understood our needs
-                                perfectly and delivered beyond our expectations. I highly recommend their services to anyone
-                                looking for quality."</p>
+                            <p class="testimonial-text"><strong>"A haven of tranquility and sophistication! From the plush bedding to the gourmet dining, every aspect of my stay was
+                            flawless. The staff’s dedication to excellence was evident in every interaction. It is not just a stay it is an experience
+                            that lingers in the heart long after departure."</p></strong>
                         </div>
                     </div>
                 </div>
@@ -117,15 +138,15 @@
                 <div class="card" id="card2">
                     <div class="card-content">
                         <div class="client-image">
-                            <img src="images/Testimonial 2.jpg" alt="Client 2">
+                            <img src="images/Testimonial 3.jpg" alt="Client 2">
                         </div>
                         <div class="client-info">
-                            <h3>Michael Chen</h3>
-                            <p class="client-role">CEO, Tech Innovations</p>
-                            <div class="rating">★★★★★</div>
-                            <p class="testimonial-text">"Working with this team transformed our business. Their attention to
-                                detail and commitment to excellence made all the difference. Our projects are now completed
-                                ahead of schedule."</p>
+                            <h3>Emily Rodriguez</h3>
+                            
+                            <div class="rating">★★★★☆</div>
+                            <p class="testimonial-text"><strong>"An absolute gem of a hotel! From the moment I walked in, I was greeted with warmth and professionalism. The ambiance
+                            was exquisite, the rooms were pristine, and the service was beyond exceptional. Every little detail was thoughtfully
+                            curated to ensure a luxurious and comfortable stay. I can't wait to return!"</strong></p>
                         </div>
                     </div>
                 </div>
@@ -133,15 +154,15 @@
                 <div class="card" id="card3">
                     <div class="card-content">
                         <div class="client-image">
-                            <img src="images/Testimonial 3.jpg" alt="Client 3">
+                            <img src="images/Testimonial 2.jpg" alt="Client 3">
                         </div>
                         <div class="client-info">
-                            <h3>Emily Rodriguez</h3>
-                            <p class="client-role">Project Manager</p>
+                            <h3>James Whitmore</h3>
+                            
                             <div class="rating">★★★★☆</div>
-                            <p class="testimonial-text">"The collaboration was seamless from start to finish. They
-                                understood our vision and brought fresh ideas to the table. Our team was impressed with
-                                their professionalism and creativity."</p>
+                            <p class="testimonial-text"><strong>"A truly five-star experience! The hospitality was unmatched, and the staff went above and beyond to make my stay
+                            unforgettable. The attention to detail, from the impeccable décor to the world-class dining options, was remarkable. I
+                            felt like royalty throughout my visit!"</strong></p>
                         </div>
                     </div>
                 </div>
@@ -152,12 +173,12 @@
                             <img src="images/Testimonial 4.jpg" alt="Client 4">
                         </div>
                         <div class="client-info">
-                            <h3>David Thompson</h3>
-                            <p class="client-role">Design Director</p>
+                            <h3>Olivia Kensington</h3>
+                            
                             <div class="rating">★★★★★</div>
-                            <p class="testimonial-text">"I've worked with many agencies before, but none delivered the level
-                                of quality and attention we received here. Their innovative approach helped us stand out in
-                                a competitive market."</p>
+                            <p class="testimonial-text"><strong>"This hotel redefines elegance and comfort. The rooms are a perfect blend of modern luxury and timeless charm, while the
+                            service is nothing short of perfection. Every interaction with the staff was warm and welcoming. It’s the kind of place
+                            that makes you feel special!"</strong></p>
                         </div>
                     </div>
                 </div>
@@ -193,8 +214,6 @@
             </div>
         </div>
     </div>
-
-    
 
 </body>
 
