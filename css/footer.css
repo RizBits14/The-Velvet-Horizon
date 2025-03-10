@@ -9,23 +9,21 @@
 f_body {
     display: flex;
     justify-content: flex-end;
-    min-height: 100vh;
+    min-height: 10vh;
     background: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7)
 }
 
 footer {
-
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: linear-gradient(135deg, #A0D3E8 0%, #2a5298 100%);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
 
 footer .social_icons,
@@ -41,7 +39,6 @@ footer .menu{
 footer .social_icons li,
 footer .menu li {
     list-style: none;
-
 }
 
 footer .social_icons li a {
@@ -54,7 +51,9 @@ footer .social_icons li a {
 
 footer .social_icons li a:hover {
     transform: translate(10px);
-}footer .social_icons li a {
+}
+
+footer .social_icons li a {
     font-size: 2em;
     color:#fff;
     margin: 0 10px;
@@ -68,4 +67,73 @@ footer .menu li a {
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../images/Index_Wave_Gradient.png');
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave_1 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_1 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+@keyframes animateWave_1 {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
 }
