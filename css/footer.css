@@ -17,7 +17,7 @@ f_body {
 footer {
     position: relative;
     width: 100%;
-    background: linear-gradient(135deg, #A0D3E8 0%, #2a5298 100%);
+    background: linear-gradient(0deg, #1e3c72 0%, #2a5298 100%);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -53,13 +53,6 @@ footer .social_icons li a:hover {
     transform: translate(10px);
 }
 
-footer .social_icons li a {
-    font-size: 2em;
-    color:#fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
 
 footer .menu li a {
     font-size: 1.2em;
