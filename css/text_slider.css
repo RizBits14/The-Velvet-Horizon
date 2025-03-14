@@ -1,0 +1,144 @@
+/* Sliding Text Animation */
+.sliding-text-container {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg,
+            rgba(26, 26, 46, 0.8) 0%,
+            rgba(22, 33, 62, 0.9) 50%,
+            rgba(26, 26, 46, 0.8) 100%);
+    padding: 25px 0;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 223, 126, 0.3);
+    border-bottom: 1px solid rgba(255, 223, 126, 0.3);
+}
+
+/* Add elegant gradient overlays for fade effect */
+.sliding-text-container::before,
+.sliding-text-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+}
+
+.sliding-text-container::before {
+    left: 0;
+    background: linear-gradient(to right,
+            rgba(26, 26, 46, 1) 0%,
+            rgba(26, 26, 46, 0) 100%);
+}
+
+.sliding-text-container::after {
+    right: 0;
+    background: linear-gradient(to left,
+            rgba(26, 26, 46, 1) 0%,
+            rgba(26, 26, 46, 0) 100%);
+}
+
+.sliding-text-track {
+    display: inline-flex;
+    /* Changed from flex to inline-flex */
+    animation: scroll 30s linear infinite;
+    /* Adjusted timing */
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.sliding-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffd97e;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 50px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0;
+    /* Added to ensure consistent spacing */
+}
+
+/* Add decorative elements before and after each text */
+.sliding-text::before,
+.sliding-text::after {
+    content: "✦";
+    font-size: 18px;
+    color: rgba(255, 223, 126, 0.6);
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+/* Hover effect */
+.sliding-text:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 50px));
+        /* Adjusted to ensure full content visibility */
+    }
+}
+
+/* Pause animation on hover for better user experience */
+.sliding-text-container:hover .sliding-text-track {
+    animation-play-state: paused;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .sliding-text {
+        font-size: 24px;
+        margin: 0 40px;
+    }
+
+    .sliding-text-track {
+        animation-duration: 25s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sliding-text-container {
+        padding: 20px 0;
+    }
+
+    .sliding-text {
+        font-size: 20px;
+        margin: 0 30px;
+    }
+
+    .sliding-text::before,
+    .sliding-text::after {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .sliding-text-track {
+        animation-duration: 20s;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sliding-text {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+
+    .sliding-text::before,
+    .sliding-text::after {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .sliding-text-track {
+        animation-duration: 15s;
+    }
+}
