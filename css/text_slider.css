@@ -40,9 +40,7 @@
 
 .sliding-text-track {
     display: inline-flex;
-    /* Changed from flex to inline-flex */
     animation: scroll 30s linear infinite;
-    /* Adjusted timing */
     white-space: nowrap;
     will-change: transform;
 }
@@ -57,7 +55,6 @@
     letter-spacing: 1px;
     display: inline-block;
     padding: 0;
-    /* Added to ensure consistent spacing */
 }
 
 /* Add decorative elements before and after each text */
@@ -70,7 +67,7 @@
     vertical-align: middle;
 }
 
-/* Hover effect */
+/* Hover effect - color change only, no pause */
 .sliding-text:hover {
     color: #ffffff;
     transform: scale(1.05);
@@ -84,14 +81,10 @@
 
     100% {
         transform: translateX(calc(-50% - 50px));
-        /* Adjusted to ensure full content visibility */
     }
 }
 
-/* Pause animation on hover for better user experience */
-.sliding-text-container:hover .sliding-text-track {
-    animation-play-state: paused;
-}
+/* Removed the hover pause effect */
 
 /* Responsive styles */
 @media screen and (max-width: 992px) {
