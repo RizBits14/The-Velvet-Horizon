@@ -42,7 +42,7 @@
 }
 
 .card-content {
-    background-color: #1c6caa;
+    background-color: rgba(26, 26, 46, 0.95);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -50,10 +50,12 @@
     flex-direction: column;
     height: 100%;
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 223, 126, 0.2);
 }
 
 .card-content:hover {
     transform: translateY(-10px);
+    border: 1px solid rgba(255, 223, 126, 0.4);
 }
 
 /* Client image */
@@ -78,20 +80,21 @@
 
 .client-info h3 {
     margin: 0 0 5px;
-    color: #333;
-    
+    color: #ffd97e;
 }
 
-
+.client-role {
+    font-size: 12px;
+}
 
 .rating {
-    color: #ffc107;
+    color: #ffd97e;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
 .testimonial-text {
-    color: #fffefe;
+    color: #e2e2e2;
     line-height: 1.6;
 }
 
@@ -116,7 +119,7 @@
 
 .prev-btn,
 .next-btn {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 223, 126, 0.2);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -125,7 +128,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 18px;
-    color: #333;
+    color: #ffd97e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -140,7 +143,7 @@
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: #2a5298;
+    background-color: rgba(255, 223, 126, 0.4);
 }
 
 /* Navigation dots */
@@ -154,14 +157,14 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: rgba(255, 223, 126, 0.2);
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .nav-dot:hover {
-    background-color: #999;
+    background-color: rgba(255, 223, 126, 0.4);
 }
 
 /* Active navigation dot styling */
@@ -169,7 +172,7 @@
 #testimonial2:checked~.navigation-dots .nav-dot:nth-child(2),
 #testimonial3:checked~.navigation-dots .nav-dot:nth-child(3),
 #testimonial4:checked~.navigation-dots .nav-dot:nth-child(4) {
-    background-color: #333;
+    background-color: #ffd97e;
 }
 
 /* Slide transitions */
