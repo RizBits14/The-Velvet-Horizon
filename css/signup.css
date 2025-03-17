@@ -1,4 +1,4 @@
-/* Sign Up Page Styles */
+/* Sign In Page Styles */
 :root {
     --primary-gold: #D4AF37;
     --primary-gold-hover: #B8960C;
@@ -10,7 +10,7 @@
     --border-light: rgba(212, 175, 55, 0.3);
 }
 
-.signup-container {
+.signin-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,20 +18,20 @@
     padding: 2rem;
 }
 
-.signup-card {
+.signin-card {
     background-color: var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     padding: 2.5rem;
     border: 1px solid var(--border-light);
     position: relative;
     overflow: hidden;
 }
 
-.signup-card::before {
+.signin-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,36 +41,26 @@
     background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
 }
 
-.signup-header {
+.signin-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.signup-header h2 {
+.signin-header h2 {
     font-size: 2.2rem;
     color: var(--primary-gold);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.signup-header p {
+.signin-header p {
     color: var(--light-text);
     font-size: 1rem;
     opacity: 0.9;
 }
 
-.signup-form {
+.signin-form {
     margin-bottom: 1.5rem;
-}
-
-.form-row {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0;
-}
-
-.form-row .form-group {
-    flex: 1;
 }
 
 .form-group {
@@ -102,47 +92,40 @@
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
-.password-hint {
-    display: block;
-    margin-top: 0.5rem;
-    color: var(--light-text);
-    font-size: 0.75rem;
-    opacity: 0.8;
-}
-
 .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5rem;
     font-size: 0.85rem;
 }
 
-.terms-agreement {
+.remember-me {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.terms-agreement input {
+.remember-me input {
     margin-right: 0.5rem;
-    margin-top: 0.25rem;
     accent-color: var(--primary-gold);
 }
 
-.terms-agreement label {
+.remember-me label {
     color: var(--light-text);
-    line-height: 1.4;
 }
 
-.terms-agreement a {
+.forgot-password {
     color: var(--primary-gold);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.terms-agreement a:hover {
+.forgot-password:hover {
     text-decoration: underline;
     color: var(--primary-gold-hover);
 }
 
-.signup-button {
+.signin-button {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--primary-gold);
@@ -156,28 +139,28 @@
     margin-bottom: 1rem;
 }
 
-.signup-button:hover {
+.signin-button:hover {
     background-color: var(--primary-gold-hover);
 }
 
-.signup-footer {
+.signin-footer {
     text-align: center;
 }
 
-.signup-footer p {
+.signin-footer p {
     color: var(--light-text);
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
 
-.signup-footer a {
+.signin-footer a {
     color: var(--primary-gold);
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.signup-footer a:hover {
+.signin-footer a:hover {
     text-decoration: underline;
     color: var(--primary-gold-hover);
 }
@@ -206,7 +189,7 @@
     font-size: 0.8rem;
 }
 
-.social-signup {
+.social-signin {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -244,26 +227,27 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .signup-card {
+    .signin-card {
         padding: 1.5rem;
     }
     
-    .signup-header h2 {
+    .signin-header h2 {
         font-size: 1.8rem;
     }
 }
 
-@media (max-width: 576px) {
-    .signup-container {
+@media (max-width: 480px) {
+    .signin-container {
         padding: 1rem;
     }
     
-    .form-row {
+    .form-options {
         flex-direction: column;
-        gap: 0;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
     
-    .social-signup {
+    .social-signin {
         flex-direction: column;
     }
 }
