@@ -1,13 +1,13 @@
 /* Sign In Page Styles */
 :root {
-    --primary-gold: #D4AF37;
-    --primary-gold-hover: #B8960C;
+    --primary-gold: #ffd97e;
+    --primary-gold-hover: #e9c989;
     --dark-blue: #1a1a2e;
     --medium-blue: #16213e;
     --light-text: #e2e2e2;
     --card-bg: rgba(26, 26, 46, 0.85);
     --input-bg: rgba(22, 33, 62, 0.7);
-    --border-light: rgba(212, 175, 55, 0.3);
+    --border-light: rgba(255, 217, 126, 0.3);
 }
 
 .signin-container {
