@@ -1,16 +1,16 @@
-/* Sign In Page Styles */
+/* Sign Up Page Styles */
 :root {
-    --primary-gold: #D4AF37;
-    --primary-gold-hover: #B8960C;
+    --primary-gold: #ffd97e;
+    --primary-gold-hover: #e9c989;
     --dark-blue: #1a1a2e;
     --medium-blue: #16213e;
     --light-text: #e2e2e2;
     --card-bg: rgba(26, 26, 46, 0.85);
     --input-bg: rgba(22, 33, 62, 0.7);
-    --border-light: rgba(212, 175, 55, 0.3);
+    --border-light: rgba(255, 217, 126, 0.3);
 }
 
-.signin-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,20 +18,20 @@
     padding: 2rem;
 }
 
-.signin-card {
+.signup-card {
     background-color: var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     padding: 2.5rem;
     border: 1px solid var(--border-light);
     position: relative;
     overflow: hidden;
 }
 
-.signin-card::before {
+.signup-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,26 +41,36 @@
     background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
 }
 
-.signin-header {
+.signup-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.signin-header h2 {
+.signup-header h2 {
     font-size: 2.2rem;
     color: var(--primary-gold);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.signin-header p {
+.signup-header p {
     color: var(--light-text);
     font-size: 1rem;
     opacity: 0.9;
 }
 
-.signin-form {
+.signup-form {
     margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.form-row .form-group {
+    flex: 1;
 }
 
 .form-group {
@@ -92,40 +102,47 @@
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
+.password-hint {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--light-text);
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
 .form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 1.5rem;
     font-size: 0.85rem;
 }
 
-.remember-me {
+.terms-agreement {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.remember-me input {
+.terms-agreement input {
     margin-right: 0.5rem;
+    margin-top: 0.25rem;
     accent-color: var(--primary-gold);
 }
 
-.remember-me label {
+.terms-agreement label {
     color: var(--light-text);
+    line-height: 1.4;
 }
 
-.forgot-password {
+.terms-agreement a {
     color: var(--primary-gold);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.forgot-password:hover {
+.terms-agreement a:hover {
     text-decoration: underline;
     color: var(--primary-gold-hover);
 }
 
-.signin-button {
+.signup-button {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--primary-gold);
@@ -139,28 +156,28 @@
     margin-bottom: 1rem;
 }
 
-.signin-button:hover {
+.signup-button:hover {
     background-color: var(--primary-gold-hover);
 }
 
-.signin-footer {
+.signup-footer {
     text-align: center;
 }
 
-.signin-footer p {
+.signup-footer p {
     color: var(--light-text);
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
 
-.signin-footer a {
+.signup-footer a {
     color: var(--primary-gold);
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.signin-footer a:hover {
+.signup-footer a:hover {
     text-decoration: underline;
     color: var(--primary-gold-hover);
 }
@@ -189,7 +206,7 @@
     font-size: 0.8rem;
 }
 
-.social-signin {
+.social-signup {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -227,27 +244,21 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .signin-card {
+    .signup-card {
         padding: 1.5rem;
     }
     
-    .signin-header h2 {
+    .signup-header h2 {
         font-size: 1.8rem;
     }
 }
 
-@media (max-width: 480px) {
-    .signin-container {
+@media (max-width: 576px) {
+    .signup-container {
         padding: 1rem;
     }
     
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
-    .social-signin {
+    .social-signup {
         flex-direction: column;
     }
 }
