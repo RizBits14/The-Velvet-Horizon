@@ -1,0 +1,229 @@
+/* About Page Styles */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #f4f0e5;
+    line-height: 1.8;
+}
+
+.about-header {
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+}
+
+.about-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #d4af37;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.golden-line {
+    height: 2px;
+    width: 120px;
+    background-color: #d4af37;
+    margin: 1rem auto 2rem;
+}
+
+.about-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 4rem;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #d4af37;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #f4f0e5;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    pointer-events: none;
+}
+
+/* Stats Section */
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(15, 15, 20, 0.7);
+    padding: 3rem;
+    margin: 4rem 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.stat-item {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.stat-text {
+    font-size: 1rem;
+    color: #f4f0e5;
+    letter-spacing: 1px;
+}
+
+
+
+/* Commitment Section */
+.commitment-section {
+    text-align: center;
+    padding: 3rem 0 5rem;
+}
+
+.commitment-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.commitment-section p {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-button {
+    margin-top: 2.5rem;
+}
+
+.cta-button a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta-button a:hover {
+    background-color: #d4af37;
+    color: #0f0f14;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about-section.reverse {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-image {
+        width: 100%;
+    }
+    
+    .team-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-stats {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .stat-item {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .cta-button a {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Navigation active state */
+.nav-items li a.active {
+    color: #d4af37;
+    font-weight: 600;
+}
