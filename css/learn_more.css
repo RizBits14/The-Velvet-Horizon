@@ -1,14 +1,16 @@
 /* Learn More Page Styles */
 :root {
-    --primary-color: #a67c52;
-    --primary-dark: #8b5e34;
-    --primary-light: #d4b595;
+    --primary-color: #ffd97e;
+    --primary-dark: #e9c989;
+    --primary-light: #ffecb3;
     --secondary-color: #333;
-    --text-color: #333;
-    --text-light: #666;
+    --text-color: #fff;
+    --text-light: #e2e2e2;
     --background-light: #f9f7f4;
     --white: #fff;
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-blue: #1a1a2e;
+    --medium-blue: #16213e;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
 
@@ -16,7 +18,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-light);
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
     margin: 0;
     padding: 0;
 }
@@ -85,7 +87,7 @@ body {
 
 /* Mission Statement */
 .mission-statement {
-    background-color: var(--white);
+    background-color: transparent;
     padding: 60px 0;
     text-align: center;
 }
@@ -120,7 +122,7 @@ body {
 /* Initiatives Section */
 .initiatives-container {
     padding: 80px 0;
-    background-color: var(--background-light);
+    background-color: transparent;
 }
 
 .initiatives-wrapper {
@@ -134,7 +136,7 @@ body {
 }
 
 .initiative {
-    background-color: var(--white);
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
@@ -178,7 +180,7 @@ body {
     width: 50px;
     height: 50px;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--dark-blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -201,7 +203,7 @@ body {
 
 /* Achievements Section */
 .achievements-section {
-    background-color: var(--white);
+    background-color: transparent;
     padding: 80px 0;
 }
 
@@ -215,7 +217,7 @@ body {
 .achievement {
     text-align: center;
     padding: 30px;
-    background-color: var(--background-light);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -280,7 +282,7 @@ body {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.3rem;
-    color: var(--white);
+    color: var(--dark-blue);
     background: var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
@@ -356,184 +358,23 @@ body {
 
 /* Footer Specific Styling for Learn More Page */
 .footer {
-    background-color: #1d2951;
-    color: var(--white);
-    padding: 60px 20px 20px;
-    margin-top: 0;
-    position: relative;
+    display: none;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+.footer-content, .footer-logo, .footer-links, .footer-column, 
+.footer-social, .social-icons, .contact-info, .footer-bottom {
+    display: none;
 }
 
-.footer-logo img {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer-column h3 {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.footer-column h3:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary-color);
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-column li {
-    margin-bottom: 12px;
-}
-
-.footer-column a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.footer-column a:hover {
-    color: var(--primary-light);
-    padding-left: 5px;
-}
-
-.footer-social h3 {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.footer-social h3:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary-color);
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--white);
-    font-size: 1.2rem;
-    transition: var(--transition);
-}
-
-.social-icons a:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-5px);
-}
-
-.contact-info {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.contact-info p {
-    color: var(--white);
-    text-align: center;
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Responsive Footer */
 @media (max-width: 991px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .footer-logo {
-        margin: 0 auto;
-    }
-    
-    .footer-links {
-        justify-content: center;
-    }
-    
-    .footer-column h3:after,
-    .footer-social h3:after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .footer-column a:hover {
-        padding-left: 0;
-    }
-    
-    .contact-info {
-        margin: 20px auto 0;
+    .footer-content, .footer-logo, .footer-links, .footer-column, 
+    .footer-social, .contact-info {
+        display: none;
     }
 }
 
 @media (max-width: 768px) {
-    .footer-links {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .footer {
-        padding: 40px 20px 20px;
+    .footer-links, .footer {
+        display: none;
     }
 }
