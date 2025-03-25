@@ -158,6 +158,33 @@
     background-position: center;
 }
 
+#housekeeping-manager {
+    background-image: url('../images/Housekeeping_Manager\ 599\ x\ 377.png');
+    background-size: cover;
+    background-position: center;
+}
+#concierge-manager {
+    background-image: url('../images/Concierge_Manager\ 885\ x\ 663.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#food-and-beverage-manager {
+    background-image: url('../images/Food_and_Beverage_Manager\ 1200\ x\ 600.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#security-manager {
+    background-image: url('../images/Security_Manager\ 626\ x\ 417.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#facilities-manager {
+    background-image: url('../images/Facilities_Manager\ 390\ x\ 280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Staff Details Styling */
 .staff-details {
     padding: 0 25px 25px;
