@@ -105,6 +105,31 @@
     box-shadow: 0 8px 25px rgba(255, 217, 126, 0.3);
 }
 
+/* Individual staff member images */
+#founders-image {
+    background-image: url('../images/Founders\ 612\ x\ 573.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ceo-general-manager-image {
+    background-image: url('../images/CEO-General_Manager\ 1920\ x\ 1080.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#executive-director-image {
+    background-image: url('../images/Executive_Director\ 600\ x\ 900.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#operation-manager-image {
+    background-image: url('../images/Operation_Manager\ 612\ x\ 408.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Staff Details Styling */
 .staff-details {
     padding: 0 25px 25px;
