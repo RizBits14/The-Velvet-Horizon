@@ -58,9 +58,13 @@
     </div>
     <br><br><br>
 
-    <!-- Contact page header -->
-    <h1 class="cursive-name">Contact Us</h1>
-    <h2 class="subtitle-elegant">We're Here to Make Your Stay Exceptional</h2>
+    <!-- Contact page header with parallax background -->
+    <div class="contact-hero">
+        <div class="hero-content">
+            <h1 class="cursive-name">Contact Us</h1>
+            <h2 class="subtitle-elegant">We're Here to Make Your Stay Exceptional</h2>
+        </div>
+    </div>
     <br>
 
     <!-- Contact section -->
@@ -111,6 +115,17 @@
                         Front Desk: 24/7</p>
                 </div>
             </div>
+
+            <!-- New social media quick links -->
+            <div class="quick-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons-contact">
+                    <a href="#" class="social-icon-btn"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="social-icon-btn"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="social-icon-btn"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" class="social-icon-btn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
         </div>
 
         <div class="contact-form-panel">
@@ -153,9 +168,88 @@
 
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
+
+            <!-- Form success message -->
+            <div id="form-success" class="hidden">
+                <div class="success-animation">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </div>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+            </div>
         </div>
     </div>
 
+    <!-- Testimonials section -->
+    <div class="testimonials-section">
+        <h2>Guest Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <!-- Image placeholder -->
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="quote-icon"><ion-icon name="chatbubble-outline"></ion-icon></div>
+                    <p>"The staff at The Velvet Horizon went above and beyond to accommodate our requests. The attention to detail was impeccable!"</p>
+                    <h4>- Sarah Johnson</h4>
+                    <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <!-- Image placeholder -->
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="quote-icon"><ion-icon name="chatbubble-outline"></ion-icon></div>
+                    <p>"A truly unforgettable experience. The service was prompt and the amenities exceeded our expectations. We will definitely return."</p>
+                    <h4>- Michael Chen</h4>
+                    <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><ion-icon name="chevron-back-outline"></ion-icon></button>
+            <button class="next-btn"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
+    </div>
+
+    <!-- Image gallery section -->
+    <div class="contact-gallery">
+        <h2>Experience The Velvet Horizon</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <div class="image-placeholder"></div>
+                <div class="gallery-caption">Luxurious Lobby</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder"></div>
+                <div class="gallery-caption">Executive Suite</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder"></div>
+                <div class="gallery-caption">Gourmet Restaurant</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder"></div>
+                <div class="gallery-caption">Infinity Pool</div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Google Maps embed -->
     <div class="map-container">
         <h2>Find Us</h2>
@@ -164,6 +258,52 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215!2d-73.9878!3d40.7578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzI4LjEiTiA3M8KwNTknMTYuMSJX!5e0!3m2!1sen!2sus!4v1635345735054!5m2!1sen!2sus"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your check-in and check-out times?</h3>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="faq-answer">
+                    <p>Our standard check-in time is 3:00 PM and check-out time is 11:00 AM. Early check-in and late check-out can be arranged based on availability for an additional fee.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer airport transfers?</h3>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer luxury airport transfer services for our guests. Please contact our concierge team at least 48 hours in advance to arrange transportation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is breakfast included with the room?</h3>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="faq-answer">
+                    <p>Breakfast is included with most of our room packages. Please check your specific reservation details or contact our reception for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter signup -->
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers and updates</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </div>
 
@@ -190,6 +330,62 @@
 
         <p>&#169 The Velvet Horizon || All Rights Reserved</p>
     </footer>
+
+    <!-- Add JavaScript for interactivity -->
+    <script>
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate form submission
+            document.getElementById('contact-form').classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+            
+            // Reset form after 5 seconds for demo purposes
+            setTimeout(() => {
+                document.getElementById('contact-form').reset();
+                document.getElementById('contact-form').classList.remove('hidden');
+                document.getElementById('form-success').classList.add('hidden');
+            }, 5000);
+        });
+        
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Testimonial slider functionality
+        const slider = document.querySelector('.testimonial-slider');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.testimonial-card');
+        
+        prevBtn.addEventListener('click', () => {
+            slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+            updateSlider();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+            updateSlider();
+        });
+        
+        function updateSlider() {
+            const offset = -slideIndex * 100;
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+        
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+            updateSlider();
+        }, 5000);
+    </script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
