@@ -56,76 +56,30 @@
         </div>
     </div>
 
-    <!-- Page Header -->
-    <header class="room-header">
-        <h1 class="cursive-name">Luxurious Accommodations</h1>
-        <h2 class="subtitle-elegant">Choose Your Perfect Stay</h2>
-        <p class="header-description">Indulge in the ultimate comfort and elegance at The Velvet Horizon's meticulously
-            designed rooms and suites. Each accommodation offers a perfect blend of modern luxury and timeless
-            sophistication.</p>
-    </header>
-
-    <!-- Room Filter Options -->
-    <div class="room-filters">
-        <span class="filter-label">Filter by:</span>
-        <div class="filter-options">
-            <a href="#" class="filter-option active">All Rooms</a>
-            <a href="#" class="filter-option">Rooms</a>
-            <a href="#" class="filter-option">Suites</a>
-            <a href="#" class="filter-option">Ocean View</a>
-            <a href="#" class="filter-option">City View</a>
-        </div>
-    </div>
+    <h1 class="cursive-name">Our Luxurious Accommodations</h1>
+    <h2 class="subtitle-elegant">Choose Your Perfect Stay</h2>
 
     <div class="rooms-container">
         <!-- Standard Room -->
         <div class="room-card">
-            <div class="image-slider-container">
-                <div class="image-slider">
-                    <input type="radio" name="slider-standard" id="standard-img1" checked>
-                    <input type="radio" name="slider-standard" id="standard-img2">
+            <div class="image-slider">
+                <!-- ADD STANDARD ROOM IMAGES HERE -->
+                <img src="images/Standard Room 1.jpg" alt="Standard Room View 1" class="active">
+                <img src="images/Standard Room 2.jpg" alt="Standard Room View 2">
 
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/Standard Room 1.jpg" alt="Standard Room View 1">
-                        </div>
-                        <div class="slide">
-                            <img src="images/Standard Room 2.jpg" alt="Standard Room View 2">
-                        </div>
-                    </div>
-
-                    <div class="slider-controls">
-                        <label for="standard-img2" class="next-control">❯</label>
-                        <label for="standard-img1" class="prev-control">❮</label>
-                    </div>
-
-                    <div class="slider-dots">
-                        <label for="standard-img1" class="dot"></label>
-                        <label for="standard-img2" class="dot"></label>
-                    </div>
+                <!-- Navigation dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="switchImage(this, 0)"></span>
+                    <span class="dot" onclick="switchImage(this, 1)"></span>
                 </div>
 
-                <div class="overlay-info">
-                    <span class="room-badge">Popular Choice</span>
-                </div>
+                <!-- Navigation arrows -->
+                <button class="slider-arrow prev" onclick="prevImage(this)">❮</button>
+                <button class="slider-arrow next" onclick="nextImage(this)">❯</button>
             </div>
-
             <div class="room-details">
-                <div class="room-header">
-                    <h3>Standard Room</h3>
-                    <div class="room-rating">
-                        <span class="stars">★★★★☆</span>
-                        <span class="review-count">(128 reviews)</span>
-                    </div>
-                </div>
-
-                <p class="price">Starting from <span>$150</span>/night</p>
-
-                <div class="room-description">
-                    <p>Our comfortable Standard Room offers a perfect blend of style and functionality for the
-                        discerning traveler.</p>
-                </div>
-
+                <h3>Standard Room</h3>
+                <p class="price">Starting from $150/night</p>
                 <div class="amenities">
                     <span>✓ 30m² Room</span>
                     <span>✓ King Size Bed</span>
@@ -133,61 +87,31 @@
                     <span>✓ Free Wi-Fi</span>
                     <span>✓ Air Conditioning</span>
                 </div>
-
-                <a href="#" class="book-now">Book Now</a>
-
-                <a href="#" class="view-details">View Details</a>
+                <button class="book-now">Book Now</button>
             </div>
         </div>
 
         <!-- Superior Room -->
         <div class="room-card">
-            <div class="image-slider-container">
-                <div class="image-slider">
-                    <input type="radio" name="slider-superior" id="superior-img1" checked>
-                    <input type="radio" name="slider-superior" id="superior-img2">
+            <div class="image-slider">
+                <!-- ADD STANDARD ROOM IMAGES HERE -->
+                <img src="images/Superior Room 1.jpg" alt="Standard Room View 1" class="active">
+                <img src="images/Superior Room 2.jpg" alt="Standard Room View 2">
 
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/Superior Room 1.jpg" alt="Superior Room View 1">
-                        </div>
-                        <div class="slide">
-                            <img src="images/Superior Room 2.jpg" alt="Superior Room View 2">
-                        </div>
-                    </div>
-
-                    <div class="slider-controls">
-                        <label for="superior-img2" class="next-control">❯</label>
-                        <label for="superior-img1" class="prev-control">❮</label>
-                    </div>
-
-                    <div class="slider-dots">
-                        <label for="superior-img1" class="dot"></label>
-                        <label for="superior-img2" class="dot"></label>
-                    </div>
+                <!-- Navigation dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="switchImage(this, 0)"></span>
+                    <span class="dot" onclick="switchImage(this, 1)"></span>
                 </div>
 
-                <div class="overlay-info">
-                    <span class="room-badge">Ocean View</span>
-                </div>
+                <!-- Navigation arrows -->
+                <button class="slider-arrow prev" onclick="prevImage(this)">❮</button>
+                <button class="slider-arrow next" onclick="nextImage(this)">❯</button>
             </div>
 
             <div class="room-details">
-                <div class="room-header">
-                    <h3>Superior Room</h3>
-                    <div class="room-rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="review-count">(92 reviews)</span>
-                    </div>
-                </div>
-
-                <p class="price">Starting from <span>$250</span>/night</p>
-
-                <div class="room-description">
-                    <p>Enjoy breathtaking ocean views from your private balcony in our elegantly appointed Superior
-                        Room.</p>
-                </div>
-
+                <h3>Superior Room</h3>
+                <p class="price">Starting from $250/night</p>
                 <div class="amenities">
                     <span>✓ 40m² Room</span>
                     <span>✓ King Size Bed</span>
@@ -195,61 +119,30 @@
                     <span>✓ Private Balcony</span>
                     <span>✓ Premium Amenities</span>
                 </div>
-
-                <a href="#" class="book-now">Book Now</a>
-
-                <a href="#" class="view-details">View Details</a>
+                <button class="book-now">Book Now</button>
             </div>
         </div>
 
         <!-- Deluxe Room -->
         <div class="room-card">
-            <div class="image-slider-container">
-                <div class="image-slider">
-                    <input type="radio" name="slider-deluxe" id="deluxe-img1" checked>
-                    <input type="radio" name="slider-deluxe" id="deluxe-img2">
+            <div class="image-slider">
+                <!-- ADD STANDARD ROOM IMAGES HERE -->
+                <img src="images/Deluxe Room 1.jpg" alt="Standard Room View 1" class="active">
+                <img src="images/Deluxe Room 2.jpg" alt="Standard Room View 2">
 
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/Deluxe Room 1.jpg" alt="Deluxe Room View 1">
-                        </div>
-                        <div class="slide">
-                            <img src="images/Deluxe Room 2.jpg" alt="Deluxe Room View 2">
-                        </div>
-                    </div>
-
-                    <div class="slider-controls">
-                        <label for="deluxe-img2" class="next-control">❯</label>
-                        <label for="deluxe-img1" class="prev-control">❮</label>
-                    </div>
-
-                    <div class="slider-dots">
-                        <label for="deluxe-img1" class="dot"></label>
-                        <label for="deluxe-img2" class="dot"></label>
-                    </div>
+                <!-- Navigation dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="switchImage(this, 0)"></span>
+                    <span class="dot" onclick="switchImage(this, 1)"></span>
                 </div>
 
-                <div class="overlay-info">
-                    <span class="room-badge">Luxury</span>
-                </div>
+                <!-- Navigation arrows -->
+                <button class="slider-arrow prev" onclick="prevImage(this)">❮</button>
+                <button class="slider-arrow next" onclick="nextImage(this)">❯</button>
             </div>
-
             <div class="room-details">
-                <div class="room-header">
-                    <h3>Deluxe Room</h3>
-                    <div class="room-rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="review-count">(156 reviews)</span>
-                    </div>
-                </div>
-
-                <p class="price">Starting from <span>$350</span>/night</p>
-
-                <div class="room-description">
-                    <p>Experience unparalleled luxury in our spacious Deluxe Room with panoramic views and butler
-                        service.</p>
-                </div>
-
+                <h3>Deluxe Room</h3>
+                <p class="price">Starting from $350/night</p>
                 <div class="amenities">
                     <span>✓ 50m² Room</span>
                     <span>✓ King Size Bed</span>
@@ -257,66 +150,32 @@
                     <span>✓ Living Area</span>
                     <span>✓ Butler Service</span>
                 </div>
-
-                <a href="#" class="book-now">Book Now</a>
-
-                <a href="#" class="view-details">View Details</a>
+                <button class="book-now">Book Now</button>
             </div>
         </div>
 
         <!-- Honeymoon Suite -->
-        <div class="room-card featured">
-            <div class="image-slider-container">
-                <div class="image-slider">
-                    <input type="radio" name="slider-honeymoon" id="honeymoon-img1" checked>
-                    <input type="radio" name="slider-honeymoon" id="honeymoon-img2">
-                    <input type="radio" name="slider-honeymoon" id="honeymoon-img3">
+        <div class="room-card">
+            <div class="image-slider">
+                <!-- ADD STANDARD ROOM IMAGES HERE -->
+                <img src="images/Honeymoon Suite 1.jpg" alt="Standard Room View 1" class="active">
+                <img src="images/Honeymoon Suite 2.jpg" alt="Standard Room View 2">
+                <img src="images/Honeymoon Suite 3.jpg" alt="Standard Room View 3">
 
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/Honeymoon Suite 1.jpg" alt="Honeymoon Suite View 1">
-                        </div>
-                        <div class="slide">
-                            <img src="images/Honeymoon Suite 2.jpg" alt="Honeymoon Suite View 2">
-                        </div>
-                        <div class="slide">
-                            <img src="images/Honeymoon Suite 3.jpg" alt="Honeymoon Suite View 3">
-                        </div>
-                    </div>
-
-                    <div class="slider-controls">
-                        <label for="honeymoon-img3" class="next-control">❯</label>
-                        <label for="honeymoon-img2" class="prev-control">❮</label>
-                    </div>
-
-                    <div class="slider-dots">
-                        <label for="honeymoon-img1" class="dot"></label>
-                        <label for="honeymoon-img2" class="dot"></label>
-                        <label for="honeymoon-img3" class="dot"></label>
-                    </div>
+                <!-- Navigation dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="switchImage(this, 0)"></span>
+                    <span class="dot" onclick="switchImage(this, 1)"></span>
+                    <span class="dot" onclick="switchImage(this, 2)"></span>
                 </div>
 
-                <div class="overlay-info">
-                    <span class="room-badge special">Suite</span>
-                </div>
+                <!-- Navigation arrows -->
+                <button class="slider-arrow prev" onclick="prevImage(this)">❮</button>
+                <button class="slider-arrow next" onclick="nextImage(this)">❯</button>
             </div>
-
             <div class="room-details">
-                <div class="room-header">
-                    <h3>Honeymoon Suite</h3>
-                    <div class="room-rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="review-count">(204 reviews)</span>
-                    </div>
-                </div>
-
-                <p class="price">Starting from <span>$500</span>/night</p>
-
-                <div class="room-description">
-                    <p>Create unforgettable memories in our exquisite Honeymoon Suite with private jacuzzi and champagne
-                        service.</p>
-                </div>
-
+                <h3>Honeymoon Suite</h3>
+                <p class="price">Starting from $500/night</p>
                 <div class="amenities">
                     <span>✓ 75m² Suite</span>
                     <span>✓ Luxury King Bed</span>
@@ -324,89 +183,13 @@
                     <span>✓ Private Jacuzzi</span>
                     <span>✓ Champagne Service</span>
                 </div>
-
-                <a href="#" class="book-now">Book Now</a>
-
-                <a href="#" class="view-details">View Details</a>
+                <button class="book-now">Book Now</button>
             </div>
         </div>
     </div>
 
-    <!-- Special Offers Section -->
-    <section class="special-offers">
-        <h2>Special Offers</h2>
-        <div class="offers-container">
-            <div class="offer-card">
-                <div class="offer-content">
-                    <h3>Weekend Getaway</h3>
-                    <p>Book a 2-night weekend stay and receive a complimentary spa treatment for two.</p>
-                    <a href="#" class="view-offer">View Offer</a>
-                </div>
-                <div class="offer-badge">20% OFF</div>
-            </div>
-            <div class="offer-card">
-                <div class="offer-content">
-                    <h3>Extended Stay</h3>
-                    <p>Stay 5 nights or more and enjoy a 15% discount on our luxury accommodations.</p>
-                    <a href="#" class="view-offer">View Offer</a>
-                </div>
-                <div class="offer-badge">15% OFF</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guest Testimonials -->
-    <section class="testimonials">
-        <h2>What Our Guests Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p>"The Honeymoon Suite exceeded all our expectations. The private jacuzzi and ocean view made our
-                    anniversary truly special."</p>
-                <div class="testimonial-author">
-                    <span class="name">Michael & Sarah</span>
-                    <span class="date">January 2025</span>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p>"The attention to detail and exceptional service make The Velvet Horizon stand out. The Deluxe Room
-                    was immaculate and luxurious."</p>
-                <div class="testimonial-author">
-                    <span class="name">James W.</span>
-                    <span class="date">March 2025</span>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p>"From the moment we arrived, the staff made us feel like royalty. The Superior Room's ocean view was
-                    breathtaking at sunrise!"</p>
-                <div class="testimonial-author">
-                    <span class="name">Elizabeth T.</span>
-                    <span class="date">February 2025</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Add a booking help section -->
-    <section class="booking-help">
-        <div class="help-content">
-            <h2>Need Help Choosing?</h2>
-            <p>Our concierge team is available 24/7 to assist you in selecting the perfect accommodation for your stay.
-            </p>
-            <div class="contact-options">
-                <a href="tel:+1234567890" class="contact-button phone">
-                    <ion-icon name="call-outline"></ion-icon> Call Concierge
-                </a>
-                <a href="#" class="contact-button chat">
-                    <ion-icon name="chatbubbles-outline"></ion-icon> Live Chat
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Add footer -->
+     <br><br><br><br><br>
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -429,6 +212,112 @@
 
         <p>&#169 The Velvet Horizon || All Rights Reserved</p>
     </footer>
+
+    <!-- Full Screen Image Viewer -->
+    <div class="fullscreen-viewer" id="fullscreenViewer">
+        <span class="close-viewer" onclick="closeViewer()">×</span>
+        <div class="viewer-content">
+            <button class="viewer-arrow prev" onclick="changeViewerImage(-1)">❮</button>
+            <img id="viewerImage" src="" alt="Full size room image">
+            <button class="viewer-arrow next" onclick="changeViewerImage(1)">❯</button>
+        </div>
+    </div>
+
+    <!-- Update the script section -->
+    <script>
+        function switchImage(dot, index) {
+            const card = dot.closest('.room-card');
+            const images = card.querySelectorAll('.image-slider img');
+            const dots = card.querySelectorAll('.dot');
+
+            // Hide all images and remove active class from dots
+            images.forEach(img => img.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Show selected image and activate dot
+            images[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function nextImage(button) {
+            const card = button.closest('.room-card');
+            const images = card.querySelectorAll('.image-slider img');
+            const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+            const nextIndex = (currentIndex + 1) % images.length;
+
+            const dots = card.querySelectorAll('.dot');
+            switchImage(dots[nextIndex], nextIndex);
+        }
+
+        function prevImage(button) {
+            const card = button.closest('.room-card');
+            const images = card.querySelectorAll('.image-slider img');
+            const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+            const prevIndex = (currentIndex - 1 + images.length) % images.length;
+
+            const dots = card.querySelectorAll('.dot');
+            switchImage(dots[prevIndex], prevIndex);
+        }
+
+        // Add these new functions for the fullscreen viewer
+        function openViewer(card) {
+            const viewer = document.getElementById('fullscreenViewer');
+            const viewerImg = document.getElementById('viewerImage');
+            const images = card.querySelectorAll('.image-slider img');
+
+            // Store images array in the viewer element
+            viewer.images = Array.from(images).map(img => img.src);
+            viewer.currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+
+            // Show first image
+            viewerImg.src = viewer.images[viewer.currentIndex];
+            viewer.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeViewer() {
+            const viewer = document.getElementById('fullscreenViewer');
+            viewer.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        function changeViewerImage(direction) {
+            const viewer = document.getElementById('fullscreenViewer');
+            const viewerImg = document.getElementById('viewerImage');
+
+            viewer.currentIndex = (viewer.currentIndex + direction + viewer.images.length) % viewer.images.length;
+            viewerImg.src = viewer.images[viewer.currentIndex];
+        }
+
+        // Add click event listeners to room cards
+        document.querySelectorAll('.room-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Don't open viewer if clicking on buttons or dots
+                if (!e.target.closest('.slider-arrow') &&
+                    !e.target.closest('.slider-dots') &&
+                    !e.target.closest('.book-now')) {
+                    openViewer(card);
+                }
+            });
+        });
+
+        // Close viewer when clicking outside the image
+        document.getElementById('fullscreenViewer').addEventListener('click', (e) => {
+            if (e.target.className === 'fullscreen-viewer') {
+                closeViewer();
+            }
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const viewer = document.getElementById('fullscreenViewer');
+            if (viewer.style.display === 'flex') {
+                if (e.key === 'Escape') closeViewer();
+                if (e.key === 'ArrowLeft') changeViewerImage(-1);
+                if (e.key === 'ArrowRight') changeViewerImage(1);
+            }
+        });
+    </script>
 </body>
 
 </html>
