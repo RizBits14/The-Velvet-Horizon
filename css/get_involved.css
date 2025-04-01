@@ -1,0 +1,222 @@
+:root {
+    --primary-gold: #ffd97e;
+    --primary-gold-hover: #e9c989;
+    --dark-blue: #1a1a2e;
+    --light-text: #ffd97e;
+    --card-bg: rgba(26, 26, 46, 0.85);
+    --input-bg: rgba(22, 33, 62, 0.7);
+    --border-light: rgba(255, 217, 126, 0.3);
+    --accent-purple: rgba(115, 75, 190, 0.6);
+}
+
+.get-involved-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.get-involved-card {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 650px;
+    padding: 3rem;
+    border: 1px solid var(--border-light);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.get-involved-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-gold), var(--accent-purple), var(--primary-gold));
+}
+
+.get-involved-header {
+    margin-bottom: 2.5rem;
+}
+
+.header-icon {
+    color: var(--primary-gold);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-involved-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.get-involved-header p {
+    color: var(--light-text);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.benefits-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+    color: var(--light-text);
+}
+
+.benefit-item i {
+    color: var(--primary-gold);
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: var(--light-text);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    color: var(--light-text);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+    background-color: rgba(30, 38, 70, 0.8);
+    border-color: var(--primary-gold);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 2px rgba(255, 217, 126, 0.2);
+    outline: none;
+    background-color: rgba(30, 38, 70, 0.9);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.get-involved-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--primary-gold), #e6c060);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.get-involved-button:hover {
+    background: linear-gradient(135deg, #e6c060, var(--primary-gold));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 217, 126, 0.3);
+}
+
+.form-footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.privacy-note {
+    font-size: 0.8rem;
+    color: rgba(226, 226, 226, 0.7);
+}
+
+.privacy-note a {
+    color: var(--primary-gold);
+    text-decoration: none;
+}
+
+.privacy-note a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    color: var(--primary-gold-hover);
+}
+
+@media (max-width: 768px) {
+    .get-involved-card {
+        padding: 2rem;
+    }
+
+    .get-involved-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .benefits-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+}

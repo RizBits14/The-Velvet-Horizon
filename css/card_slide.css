@@ -1,0 +1,258 @@
+/* Main container styling */
+.testimonial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.testimonial-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Hide radio buttons but use for control */
+.slider-container input[type="radio"] {
+    display: none;
+}
+
+/* Cards container */
+.slider-cards {
+    display: flex;
+    width: 400%;
+    /* 100% for each card (4 cards total) */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Card styling */
+.card {
+    width: 25%;
+    /* Each card takes 25% of the slider width */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.card-content {
+    background-color: rgba(26, 26, 46, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 223, 126, 0.2);
+}
+
+.card-content:hover {
+    transform: translateY(-10px);
+    border: 1px solid rgba(255, 223, 126, 0.4);
+}
+
+/* Client image */
+.client-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Client info */
+.client-info {
+    text-align: center;
+}
+
+.client-info h3 {
+    margin: 0 0 5px;
+    color: #ffd97e;
+}
+
+.client-role {
+    font-size: 12px;
+}
+
+.rating {
+    color: #ffd97e;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.testimonial-text {
+    color: #e2e2e2;
+    line-height: 1.6;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: none; /* Hide all by default */
+    justify-content: space-between;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+/* Show only the active navigation buttons */
+#testimonial1:checked ~ #nav-buttons1,
+#testimonial2:checked ~ #nav-buttons2,
+#testimonial3:checked ~ #nav-buttons3,
+#testimonial4:checked ~ #nav-buttons4 {
+    display: flex;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: rgba(255, 223, 126, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffd97e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.prev-btn {
+    margin-left: 10px;
+}
+
+.next-btn {
+    margin-right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(255, 223, 126, 0.4);
+}
+
+/* Navigation dots */
+.navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 223, 126, 0.2);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+    background-color: rgba(255, 223, 126, 0.4);
+}
+
+/* Active navigation dot styling */
+#testimonial1:checked~.navigation-dots .nav-dot:nth-child(1),
+#testimonial2:checked~.navigation-dots .nav-dot:nth-child(2),
+#testimonial3:checked~.navigation-dots .nav-dot:nth-child(3),
+#testimonial4:checked~.navigation-dots .nav-dot:nth-child(4) {
+    background-color: #ffd97e;
+}
+
+/* Slide transitions */
+#testimonial1:checked~.slider-cards {
+    transform: translateX(0);
+}
+
+#testimonial2:checked~.slider-cards {
+    transform: translateX(-25%);
+}
+
+#testimonial3:checked~.slider-cards {
+    transform: translateX(-50%);
+}
+
+#testimonial4:checked~.slider-cards {
+    transform: translateX(-75%);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .card-content {
+        padding: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-cards {
+        width: 400%;
+    }
+    
+    .card {
+        width: 25%;
+    }
+    
+    .client-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .navigation-buttons {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .client-info h3 {
+        font-size: 16px;
+    }
+    
+    .client-role {
+        font-size: 12px;
+    }
+    
+    .rating {
+        font-size: 14px;
+    }
+    
+    .testimonial-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .prev-btn,
+    .next-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}

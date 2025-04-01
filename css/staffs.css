@@ -1,0 +1,392 @@
+/* Staff Page Styling for The Velvet Horizon */
+
+/* Main Container Styling */
+.staff-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Staff Introduction */
+.staff-intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 217, 126, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.staff-intro p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Section Styling */
+.staff-section {
+    margin-bottom: 70px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffd97e;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd97e, transparent);
+}
+
+/* Staff Cards Grid */
+.staff-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Individual Staff Card */
+.staff-card {
+    background: rgba(26, 26, 46, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 217, 126, 0.1);
+    height: 100%;
+}
+
+.staff-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 217, 126, 0.3);
+}
+
+/* Staff Image Styling */
+.staff-image-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.staff-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #2a5298;
+    background-image: url('../images/staff-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #ffd97e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.staff-card:hover .staff-image {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 217, 126, 0.3);
+}
+
+/* Individual staff member images */
+#founders-image {
+    background-image: url('../images/Staffs\ Images/Founders\ 612\ x\ 573.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ceo-general-manager-image {
+    background-image: url('../images/Staffs\ Images/CEO-General_Manager\ 1920\ x\ 1080.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#executive-director-image {
+    background-image: url('../images/Staffs\ Images/Executive_Director\ 600\ x\ 900.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#operation-manager-image {
+    background-image: url('../images/Staffs\ Images/Operation_Manager\ 612\ x\ 408.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#front-office-manager-image {
+    background-image: url('../images/Staffs\ Images/Front_Manager\ 800\ x\ 1200.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#guest-relationship-manager {
+    background-image: url('../images/Staffs\ Images/Guest_Manager\ 3000\ x\ 3750.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#executive-chef {
+    background-image: url('../images/Staffs\ Images/Executive_Chef\ 1200\ x\ 900.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#sous-chef {
+    background-image: url('../images/Staffs\ Images/Sous_Chef\ 584\ x\ 800.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pastry-chef {
+    background-image: url('../images/Staffs\ Images/Pastry_Chef\ 612\ x\ 408.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#housekeeping-manager {
+    background-image: url('../images/Staffs\ Images/Housekeeping_Manager\ 599\ x\ 377.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#concierge-manager {
+    background-image: url('../images/Staffs\ Images/Concierge_Manager\ 885\ x\ 663.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#food-and-beverage-manager {
+    background-image: url('../images/Staffs\ Images/Food_and_Beverage_Manager\ 1200\ x\ 600.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#security-manager {
+    background-image: url('../images/Staffs\ Images/Security_Manager\ 626\ x\ 417.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#facilities-manager {
+    background-image: url('../images/Staffs\ Images/Facilities_Manager\ 390\ x\ 280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Staff Details Styling */
+.staff-details {
+    padding: 0 25px 25px;
+    text-align: center;
+}
+
+.staff-details h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ffd97e;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+.staff-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 5px 0 15px;
+}
+
+.staff-description {
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Join Our Team Section */
+.join-team-section {
+    background: rgba(26, 26, 46, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 217, 126, 0.2);
+}
+
+.join-title {
+    font-family: 'Playfair Display', serif;
+    color: #ffd97e;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-description {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Application Form Styling */
+.staff-application-form {
+    background: rgba(19, 19, 38, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.staff-application-form h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ffd97e;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 217, 126, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    color: #16213e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd97e;
+    box-shadow: 0 4px 12px rgba(255, 217, 126, 0.5);
+    background-color: #ffffff;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #16213e;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #c6a057 0%, #ffd97e 100%);
+    color: #16213e;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(198, 160, 87, 0.5);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .staff-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .staff-cards {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .staff-intro p {
+        font-size: 18px;
+    }
+
+    .join-team-section {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .staff-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .staff-cards {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .staff-intro p {
+        font-size: 16px;
+    }
+
+    .staff-details h3 {
+        font-size: 20px;
+    }
+
+    .join-title {
+        font-size: 28px;
+    }
+
+    .join-description {
+        font-size: 16px;
+    }
+
+    .staff-application-form {
+        padding: 20px 15px;
+    }
+}
